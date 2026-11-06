@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+::selection {
+  background-color: #ffff;  
+  color: #000000;          
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+    background-color: #000000;
+    background-image: linear-gradient(rgba(23, 23, 23, 1) 1px, transparent 1px), linear-gradient(90deg, rgba(23, 23, 23, 1) 1px, transparent 1px);
+    background-size: 35px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.conteiner {
+    background-color: #000000;
+    border: #333333 1px solid;
+    width: 450px;
+    height: 550px;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.conteiner h1 {
+    text-transform: uppercase;
+}
+
+.h {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.h p {
+    color: #666666;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input label {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #cacaca;
+}
+
+input {
+    background-color: #0f0f0f;
+    border: #444444 solid 1px;
+    padding: 10px;
+    color: #cacaca;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+    transition: 0.2s ease-out all;
+}
+
+input:focus {
+    transition: 0.2s ease-out all;
+    outline: none;
+    border: #777777 solid 1px;
+}
+
+.ot  {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    
+}
+
+.ot a {
+    color: #cacaca;
+}
+
+.f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.f button {
+    transition: 0.2s all ease-in-out;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    border: #ffffff solid 1px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.2s ease-in-out all;
+}
+
+.f button:hover {
+    transition:  ease all 0.3s;
+    color: #cacaca;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.f p {
+    color: #cacaca;
+}
+
+.h img {
+    width: 80px;
+}
+
+label svg {
+    width: 20px;
+    fill: #cacaca;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}

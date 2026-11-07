@@ -8,15 +8,14 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'login.html'))
 })
 
-app.post('/api/discord/sms', (req, res) => {
-    const { nome, sobrenome, email, messagem } = req.body
+app.post('/api/login', (req, res) => {
+    const { email, password } = req.body
 
-    if (!nome){
-        res.status(401)
-        return
+    if (!email | !password){
+        return res.status(401)
     }
-
-    console.log( nome, 'o nome aqui')
+    
+    return res.status(201)
 })
 
 app.listen(3000, () => {

@@ -4,6 +4,8 @@ const app = express()
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json())
+const cors = require('cors');
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'login.html'))

@@ -1,0 +1,25 @@
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  // url = env("DATABASE_URL")
+}
+
+enum Tags {
+  FROTEND
+  BACKEND
+  DESING
+  UNDFINED
+}
+
+model Projets {
+  id Int @id 
+  nome String
+  url String
+  des String
+  tag Tags @default(UNDFINED)
+}

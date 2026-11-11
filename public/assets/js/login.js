@@ -19,7 +19,7 @@ async function LoginRequest(){
             });
 
         if (res.status == 200){
-            alert('sigma')
+            
         }
 
     } catch(erro){
